@@ -15,7 +15,7 @@ $ pip install -r requirements.txt
 $ python manage.py runserver
 
 
-테스틑 포스트맨(postman)으로 테스트를 진행하였으며, 
+테스트는 포스트맨(postman)으로 테스트를 진행하였으며, 
 
 아래의 JSON을 포스트맨으로 import(Row text) 하여 테스트를 진행할 수 있습니다.
 
