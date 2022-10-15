@@ -52,7 +52,8 @@ CREATE TABLE MeasurementData
     data_id  VARCHAR(20)    NOT NULL    COMMENT '측정 데이터ID', 
     code_id  VARCHAR(20)    NOT NULL    COMMENT '측정코드ID', 
     ms_id    VARCHAR(20)    NOT NULL    COMMENT '측정 기록ID', 
-    USE_YN   VARCHAR(1)     NOT NULL DEFAULT'Y' COMMENT '사용여부', 
+    USE_YN   VARCHAR(1)     NOT NULL DEFAULT'Y' COMMENT '사용여부',
+    value    INT            NOT NULL    COMMENT '수치', 
     PRIMARY KEY (data_id)
 );
 
@@ -65,5 +66,3 @@ ALTER TABLE MeasurementData
 ALTER TABLE MeasurementData
     ADD CONSTRAINT FK_MeasurementData_code_id_MeasurementCode_code_id FOREIGN KEY (code_id)
         REFERENCES MeasurementCode (code_id) ON DELETE RESTRICT ON UPDATE RESTRICT;
-
-
