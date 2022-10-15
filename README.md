@@ -17,7 +17,7 @@ $ python manage.py runserver
 
 테스트는 포스트맨(postman)으로 테스트를 진행하였으며, 
 
-아래의 JSON을 포스트맨으로 import(Row text) 하여 테스트를 진행할 수 있습니다.
+아래의 JSON 또는 bodit test.postman_collection.json 파일을 포스트맨으로 import 하여 테스트를 진행할 수 있습니다.
 
 {
 	"info": {
