@@ -2,6 +2,10 @@
 
 이 프로젝트는 Python 3.10버전에서 작성되었습니다.
 
+### 구현 과제로는 테이블 설계, API서버구현(1), API서버구현(2) 파파고 번역 API를 구현하였습니다.
+
+### 테이블 설계 sql 파일과 ERD 파일을 같이 업로드 하였습니다.
+
 가상환경 설치
 
 $ pip install -r requirements.txt
@@ -123,6 +127,47 @@ $ python manage.py runserver
 					"path": [
 						"apis",
 						"sum-integer"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "파파고 번역",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/apis/papago?st=안녕하세요",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"apis",
+						"papago"
+					],
+					"query": [
+						{
+							"key": "st",
+							"value": "안녕하세요"
+						}
 					]
 				}
 			},
